@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Branding.Views.MainView"
+             xmlns:views="clr-namespace:Branding.Views"
+             MasterBehavior="Popover"
+             Title="SmartHotel">
+
+    <MasterDetailPage.Master>
+        <views:MenuView BindingContext="{Binding MenuViewModel}"/>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage BackgroundColor="Transparent" />
+    </MasterDetailPage.Detail>
+
+    <!--<MasterDetailPage.Master>
+    <pages:MainViewMaster x:Name="MasterPage" />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:MainViewDetail />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>-->
+</MasterDetailPage>

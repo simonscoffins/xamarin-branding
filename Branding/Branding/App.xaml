@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Branding.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+
+            <!-- Application resource dictionary -->
+
+            <!-- COLORS -->
+
+            <!-- Primary -->
+            <Color x:Key="PrimaryColor">#A33528</Color>
+            <Color x:Key="PrimaryLightColor">#DA6451</Color>
+            <Color x:Key="PrimaryDarkColor">#6E0000</Color>
+
+            <!-- Accent -->
+            <Color x:Key="AccentColor">#FFC107</Color>
+            <Color x:Key="AccentLightColor">#FFF350</Color>
+            <Color x:Key="AccentDarkColor">#C79100</Color>
+
+            <!-- FONT FAMILY -->
+            <OnPlatform
+                x:Key="RegularFont"
+                x:TypeArguments="x:String"
+                iOS="HelveticaNeue"
+                Android="sans-serif" />
+
+            <!--<OnPlatform x:Key="RegularFont" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue</On>
+                <On Platform="Android">sans-serif</On>                
+            </OnPlatform>-->
+                       
+            <OnPlatform
+                x:Key="LightFont"
+                x:TypeArguments="x:String"
+                iOS="HelveticaNeue-Light"
+                Android="sans-serif-light" />
+
+            <!--<OnPlaform x:Key="LightFont" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue-Light</On>
+                <On Platform="Android">sans-serif-light</On>
+            </OnPlaform>-->
+            
+            <OnPlatform
+                x:Key="MediumFont"
+                x:TypeArguments="x:String"
+                iOS="HelveticaNeue-Medium"
+                Android="sans-serif-medium" />
+
+            <!--<OnPlaform x:Key="LightFont" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue-Medium</On>
+                <On Platform="Android">sans-serif-medium</On>
+            </OnPlaform>-->
+
+            
+            <!-- FONT SIZES -->
+            
+            <!--<Font x:Key="Display4Font" FontSize="112" FontFamily="{StaticResource LightFont}" />
+            <Font x:Key="Display3Font" FontSize="56" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="Display2Font" FontSize="45" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="Display1Font" FontSize="34" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="HeadlineFont" FontSize="24" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="TitleFont" FontSize="20" FontFamily="{StaticResource MediumFont}" />
+            <Font x:Key="TitleFont" FontSize="20" FontFamily="{StaticResource MediumFont}" />
+            <Font x:Key="SubheadFont" FontSize="16" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="Body2Font" FontSize="14" FontFamily="{StaticResource MediumFont}" />
+            <Font x:Key="BodyFont" FontSize="14" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="CaptionFont" FontSize="12" FontFamily="{StaticResource RegularFont}" />
+            <Font x:Key="ButtonFont" FontSize="14" FontFamily="{StaticResource MediumFont}" />-->
+
+
+            <!-- FONT COLORS -->
+            <!-- Font Colors on Light-->
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="PrimaryTextOnLight">
+                <x:Arguments>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0.87</x:Double>
+                </x:Arguments>
+            </Color>
+
+
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="SecondaryTextOnLight">
+                <x:Arguments>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0.54</x:Double>
+                </x:Arguments>
+            </Color>
+
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="DisabledTextOnLight">
+                <x:Arguments>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0.38</x:Double>
+                </x:Arguments>
+            </Color>
+
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="DividerOnLight">
+                <x:Arguments>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0.12</x:Double>
+                </x:Arguments>
+            </Color>
+
+
+             Font Colors on Dark
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="PrimaryTextOnDark">
+                <x:Arguments>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>1</x:Double>
+                </x:Arguments>
+            </Color>
+
+
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="SecondaryTextOnDark">
+                <x:Arguments>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>0.7</x:Double>
+                </x:Arguments>
+            </Color>
+
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="DisabledTextOnDark">
+                <x:Arguments>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>0.50</x:Double>
+                </x:Arguments>
+            </Color>
+
+            <Color
+                x:FactoryMethod="FromRgba"
+                x:Key="DividerOnDark">
+                <x:Arguments>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>255</x:Double>
+                    <x:Double>0.12</x:Double>
+                </x:Arguments>
+            </Color>
+
+
+            <!-- FONT STYLES -->
+            
+            <Style x:Key="Display4Font" TargetType="Label">
+                <Setter Property="FontSize" Value="112" />
+                <Setter Property="FontFamily" Value="{StaticResource LightFont}"/>
+            </Style>
+
+            <Style x:Key="Display3Font" TargetType="Label">
+                <Setter Property="FontSize" Value="56" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="Display2Font" TargetType="Label">
+                <Setter Property="FontSize" Value="45" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="Display1Font" TargetType="Label">
+                <Setter Property="FontSize" Value="34" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="HeadlineFont" TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="TitleFont" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFont}"/>
+            </Style>
+
+            <Style x:Key="SubheadingFont" TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="Body2Font" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFont}"/>
+            </Style>
+
+            <Style x:Key="Body1Font" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="CaptionFont" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+
+            <Style x:Key="ButtonFont" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFont}"/>
+            </Style>
+
+
+            <!-- Font Styles on Light -->
+
+            <Style x:Key="CaptionOnLight" TargetType="Label" BasedOn="{StaticResource CaptionFont}">
+                <Setter Property="TextColor" Value="{StaticResource SecondaryTextOnLight}"/>
+            </Style>
+
+            <Style x:Key="Body1OnLight" TargetType="Label" BasedOn="{StaticResource Body1Font}">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextOnLight}"/>
+            </Style>
+
+            <Style x:Key="SubheadingOnLight" TargetType="Label" BasedOn="{StaticResource SubheadingFont}">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextOnLight}"/>
+            </Style>
+
+            <Style x:Key="TitleOnLight" TargetType="Label" BasedOn="{StaticResource TitleFont}">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextOnLight}"/>
+            </Style>
+
+            <Style x:Key="Display1OnLight" TargetType="Label" BasedOn="{StaticResource Display1Font}">
+                <Setter Property="TextColor" Value="{StaticResource SecondaryTextOnLight}"/>
+            </Style>-->
+
+
+            <!-- Font Styles on Dark -->
+
+            <Style x:Key="CaptionOnDark" TargetType="Label" BasedOn="{StaticResource CaptionFont}">
+                <Setter Property="TextColor" Value="{StaticResource SecondaryTextOnDark}"/>
+            </Style>
+
+            <Style x:Key="Body1OnDark" TargetType="Label" BasedOn="{StaticResource Body1Font}">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextOnDark}"/>
+            </Style>
+
+            <Style x:Key="SubheadingOnDark" TargetType="Label" BasedOn="{StaticResource SubheadingFont}">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextOnDark}"/>
+            </Style>
+
+            <Style x:Key="TitleOnDark" TargetType="Label" BasedOn="{StaticResource TitleFont}">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextOnDark}"/>
+            </Style>
+
+            <Style x:Key="Display1OnDark" TargetType="Label" BasedOn="{StaticResource Display1Font}">
+                <Setter Property="TextColor" Value="{StaticResource SecondaryTextOnDark}"/>
+            </Style> -->
+
+
+            <!-- Navigaton Bar Styles-->
+            
+            <!-- Master Detail Nav Bar-->
+            <Style ApplyToDerivedTypes="true" TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="BarTextColor" Value="{StaticResource PrimaryTextOnDark}"/>
+            </Style>-->
+
+            <!-- Tabbed Page Nav Bar -->
+            <Style ApplyToDerivedTypes="true" TargetType="TabbedPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="BarTextColor" Value="{StaticResource PrimaryTextOnDark}"/>
+            </Style> -->
+
+
+        </ResourceDictionary>
+        
+
+	</Application.Resources>
+</Application>
