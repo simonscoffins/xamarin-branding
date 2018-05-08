@@ -1,32 +1,113 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Branding.Behaviors;assembly=Branding"
+             xmlns:templates="clr-namespace:Branding.Templates;assembly=Branding"
              x:Class="Branding.Views.MenuView"
              Title=" ">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="UsernamePanelStyle" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+
+            <!--<Style x:Key="HelloTextStyle" TargetType="Label"
+                   BasedOn="{StaticResource PoppinsRegularLabelStyle}">
+                <Setter Property="TextColor" Value="{StaticResource WhiteColor}" />
+                <Setter Property="FontSize" Value="{StaticResource LargeSize}" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>-->
+
+            <!--<Style x:Key="UsernameTextStyle" TargetType="Label"
+                   BasedOn="{StaticResource HelloTextStyle}">
+                <Setter Property="FontSize" Value="{StaticResource LargerSize}" />
+                <Setter Property="LineBreakMode" Value="TailTruncation" />
+            </Style>-->
+
+        </ResourceDictionary>
+    </ContentPage.Resources>    
+    
     <ContentPage.Content>
-        <Grid BackgroundColor="Transparent">
+
+        <Grid
+            RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="75*" />
+            </Grid.RowDefinitions>
+            <Grid 
+                Grid.Row="0">
+                <!--<ffimageloading:CachedImage
+                    Aspect="AspectFill"
+                    Source="{Binding UserAvatar}"
+                    CacheType="Disk"
+                    CacheDuration="30">>
+                    <ffimageloading:CachedImage.LoadingPlaceholder>
+                        <OnPlatform x:TypeArguments="ImageSource">
+                            <On Platform="Android, iOS" Value="avatar" />
+                            <On Platform="UWP" Value="Assets/avatar.png" />
+                        </OnPlatform>
+                    </ffimageloading:CachedImage.LoadingPlaceholder>
+                </ffimageloading:CachedImage>-->
+                <Grid 
+                    BackgroundColor="{StaticResource PrimaryColor}"
+                    Opacity="0.6"/>
+                <StackLayout 
+                    Padding="44, 0, 0, 10"
+                    Spacing="0"
+                    Style="{StaticResource UsernamePanelStyle}">
+                    <!--<Label   
+                        Text="{extensions:Translate Hello}" 
+                        Style="{StaticResource HelloTextStyle}"/>-->
+                    <Label 
+                        Text="{Binding Message}"
+                        Style="{StaticResource TitleOnDark}"/>
+                </StackLayout>
+            </Grid>
+            <Grid
+                Grid.Row="1">
+                <ListView 
+                    AutomationId="menu"
+                    ItemsSource="{Binding MenuItems}" 
+                    CachingStrategy="RecycleElement"
+                    SeparatorVisibility="None"
+                    HasUnevenRows="True"
+                    behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding MenuItemSelectedCommand}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <templates:MenuItemTemplate />
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+        <!--<Grid BackgroundColor="Transparent">
             <Grid.RowDefinitions>
                 <RowDefinition Height="200"/>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0" BackgroundColor="{StaticResource PrimaryColor}">
-                <Label Text="Branding" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <Label Text="{Binding Message}" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 
-                <!--<Image Source="bg.png" Aspect="AspectFill" />-->
+                --><!--<Image Source="bg.png" Aspect="AspectFill" />-->
                 <!--<StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     -->
                 <!--<controls:CircleImage BorderColor="White" BorderThickness="2" Source="profile.png" Aspect="AspectFill" WidthRequest="85" HeightRequest="85" />-->
                 <!--
                     <Label Text="Adam Pedley" TextColor="White" FontSize="Large" />
-                </StackLayout>-->
+                </StackLayout>--><!--
             </Grid>
             <StackLayout Grid.Row="1"  Margin="20,20,20,0" Spacing="15">
-                <!--<local:NavigationItem Text="Page One" Icon="fa-archive" Command="{Binding NavigationCommand}" CommandParameter="1" />
+                --><!--<local:NavigationItem Text="Page One" Icon="fa-archive" Command="{Binding NavigationCommand}" CommandParameter="1" />
                 <ContentView HeightRequest="1" BackgroundColor="Gray" />
-                <local:NavigationItem Text="Page Two" Icon="fa-cog" Command="{Binding NavigationCommand}" CommandParameter="2" />-->
+                <local:NavigationItem Text="Page Two" Icon="fa-cog" Command="{Binding NavigationCommand}" CommandParameter="2" />--><!--
             </StackLayout>
-        </Grid>
+        </Grid>-->
     </ContentPage.Content>
 </ContentPage>

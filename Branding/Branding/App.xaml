@@ -273,10 +273,10 @@
             <!-- Navigaton Bar Styles-->
             
             <!-- Master Detail Nav Bar-->
-            <Style ApplyToDerivedTypes="true" TargetType="NavigationPage">
+            <!--<Style ApplyToDerivedTypes="true" TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}"/>
                 <Setter Property="BarTextColor" Value="{StaticResource PrimaryTextOnDark}"/>
-            </Style>-->
+            </Style>-->-->
 
             <!-- Tabbed Page Nav Bar -->
             <Style ApplyToDerivedTypes="true" TargetType="TabbedPage">
