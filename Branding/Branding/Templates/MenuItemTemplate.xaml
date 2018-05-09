@@ -13,9 +13,7 @@
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
 
-            <Style x:Key="MenuTextStyle" TargetType="Label" BasedOn="{StaticResource PoppinsRegularLabelStyle}">
-                <Setter Property="TextColor" Value="{StaticResource MenuTextColor}" />
-                <Setter Property="FontSize" Value="{StaticResource MidMediumSize}" />
+            <Style x:Key="MenuTextStyle" TargetType="Label" BasedOn="{StaticResource SubheadingOnLight}">
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
 
@@ -40,7 +38,7 @@
             </Grid.ColumnDefinitions>
             <Image 
                 Grid.Column="0"
-                Source="{Binding MenuItemType, Converter={StaticResource MenuItemTypeConverter}}"
+                Source="{Binding Icon, Converter={StaticResource MenuItemTypeConverter}}"
                 Style="{StaticResource MenuIconStyle}"/>
             <Label
                 Grid.Column="1"

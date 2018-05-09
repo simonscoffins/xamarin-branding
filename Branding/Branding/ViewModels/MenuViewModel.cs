@@ -30,6 +30,7 @@ namespace Branding.ViewModels {
         private void InitializeMenuItems() {
 
             MenuItems.Add(new MenuItem {
+                Icon = "ic_home.png",
                 Title = "Home",
                 MenuItemType = MenuItemType.Home,
                 ViewModelType = typeof(MainViewModel),
@@ -37,16 +38,38 @@ namespace Branding.ViewModels {
             });
 
             MenuItems.Add(new MenuItem {
-                Title = "PlaceHolder1View",
+                Icon = "ic_bed.png",
+                Title = "PlaceHolder1",
                 MenuItemType = MenuItemType.PlaceHolder1,
                 ViewModelType = typeof(MainViewModel),
                 IsEnabled = true
             });
 
+            MenuItems.Add(new MenuItem {
+                Icon = "ic_key.png",
+                Title = "PlaceHolder2",
+                MenuItemType = MenuItemType.PlaceHolder2,
+                ViewModelType = typeof(MainViewModel),
+                IsEnabled = true
+            });
+
+            MenuItems.Add(new MenuItem {
+                Icon = "ic_beach.png",
+                Title = "PlaceHolder3",
+                MenuItemType = MenuItemType.PlaceHolder3,
+                ViewModelType = typeof(MainViewModel),
+                IsEnabled = true
+            });
+
+            MenuItems.Add(new MenuItem {
+                Icon= "ic_bot.png",
+                Title = "Settings",
+                MenuItemType = MenuItemType.Settings,
+                ViewModelType = typeof(MainViewModel),
+                IsEnabled = true
+            });
+        }
 
 
     }
-
-
-}
 }

@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:Branding.Converters;assembly=Branding"             
              x:Class="Branding.App">
 	<Application.Resources>
 
         <ResourceDictionary>
 
             <!-- Application resource dictionary -->
+
+            <!-- CONVERTERS -->
+            <converters:MenuItemTypeConverter x:Key="MenuItemTypeConverter"/>
 
             <!-- COLORS -->
 
@@ -41,7 +45,7 @@
             <!--<OnPlaform x:Key="LightFont" x:TypeArguments="x:String">
                 <On Platform="iOS">HelveticaNeue-Light</On>
                 <On Platform="Android">sans-serif-light</On>
-            </OnPlaform>-->
+            </OnPlaform>-->   
             
             <OnPlatform
                 x:Key="MediumFont"

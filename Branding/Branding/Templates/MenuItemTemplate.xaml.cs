@@ -11,8 +11,8 @@ namespace Branding.Templates {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MenuItemTemplate : ContentView {
-		public MenuItemTemplate () {
-			InitializeComponent ();
+		public MenuItemTemplate() {
+			InitializeComponent();
 		}
 	}
 }
