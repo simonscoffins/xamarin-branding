@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Branding.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ScaleBlackText : ContentPage
+	public partial class PlaceHolder1View : ContentPage
 	{
-		public ScaleBlackText ()
+		public PlaceHolder1View ()
 		{
 			InitializeComponent ();
-		    this.Title = "Black Text";
 		}
 	}
 }

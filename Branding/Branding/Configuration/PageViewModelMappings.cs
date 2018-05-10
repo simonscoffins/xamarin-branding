@@ -4,12 +4,9 @@ using Branding.ViewModels;
 using Branding.Views;
 
 namespace Branding.Configuration {
-    internal static class PageViewModelMappings {
+    internal static class ViewViewModelMappings {
 
-
-        static PageViewModelMappings() {
-        }
-
+        static ViewViewModelMappings() { }
 
         public static Dictionary<Type, Type> GetMapping() {
 
@@ -18,6 +15,11 @@ namespace Branding.Configuration {
             mappings.Add(typeof(ExtendedSplashViewModel), typeof(ExtendedSplashView));
             mappings.Add(typeof(MainViewModel), typeof(MainView));
             mappings.Add(typeof(HomeViewModel), typeof(HomeView));
+
+            mappings.Add(typeof(PlaceHolder1ViewModel), typeof(PlaceHolder1View));
+            mappings.Add(typeof(PlaceHolder2ViewModel), typeof(PlaceHolder2View));
+            mappings.Add(typeof(PlaceHolder3ViewModel), typeof(PlaceHolder3View));
+            mappings.Add(typeof(SettingsViewModel), typeof(SettingsView));
 
             return mappings;
         }

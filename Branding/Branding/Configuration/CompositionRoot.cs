@@ -13,6 +13,11 @@ namespace Branding.Configuration {
             container.Register<MainViewModel, MainViewModel>();
             container.Register<MenuViewModel, MenuViewModel>();
             container.Register<HomeViewModel, HomeViewModel>();
+
+            container.Register<PlaceHolder1ViewModel, PlaceHolder1ViewModel>();
+            container.Register<PlaceHolder2ViewModel, PlaceHolder2ViewModel>();
+            container.Register<PlaceHolder3ViewModel, PlaceHolder3ViewModel>();
+            container.Register<SettingsViewModel, SettingsViewModel>();
         }
     }
 }
