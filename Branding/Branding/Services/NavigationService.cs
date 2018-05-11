@@ -26,7 +26,7 @@ namespace Branding.Services {
         public NavigationService() {
 
             //_mappings = new Dictionary<Type, Type>();
-            _mappings = PageViewModelMappings.GetMapping();
+            _mappings = ViewViewModelMappings.GetMapping();
 
             //CreatePageViewModelMappings();
         }
