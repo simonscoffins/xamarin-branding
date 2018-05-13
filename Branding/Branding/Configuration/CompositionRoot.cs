@@ -18,6 +18,11 @@ namespace Branding.Configuration {
             container.Register<PlaceHolder2ViewModel, PlaceHolder2ViewModel>();
             container.Register<PlaceHolder3ViewModel, PlaceHolder3ViewModel>();
             container.Register<SettingsViewModel, SettingsViewModel>();
+
+            container.Register<TypeSystemViewModel, TypeSystemViewModel>();
+            container.Register<BlackTypeScaleViewModel, BlackTypeScaleViewModel>();
+            container.Register<WhiteTypeScaleViewModel, WhiteTypeScaleViewModel>();
+
         }
     }
 }

@@ -22,8 +22,10 @@ namespace Branding.Droid {
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            
             //InitMessageCenterSubscriptions();
-            Window.AddFlags(WindowManagerFlags.TranslucentNavigation);
+
+            //Window.AddFlags(WindowManagerFlags.TranslucentNavigation);
             Window.AddFlags(WindowManagerFlags.TranslucentStatus);
 
             LoadApplication(new App());
@@ -41,9 +43,6 @@ namespace Branding.Droid {
 
 
         private void MakeStatusBarTranslucent(bool makeTranslucent) {
-
-            //Window.AddFlags(WindowManagerFlags.TranslucentNavigation);
-            //Window.AddFlags(WindowManagerFlags.TranslucentStatus);
 
             if (makeTranslucent) {
                 SetStatusBarColor(Android.Graphics.Color.Transparent);

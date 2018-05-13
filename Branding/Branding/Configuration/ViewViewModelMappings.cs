@@ -21,6 +21,8 @@ namespace Branding.Configuration {
             mappings.Add(typeof(PlaceHolder3ViewModel), typeof(PlaceHolder3View));
             mappings.Add(typeof(SettingsViewModel), typeof(SettingsView));
 
+            mappings.Add(typeof(TypeSystemViewModel), typeof(TypeSystemTabbedPage));
+
             return mappings;
         }
     }

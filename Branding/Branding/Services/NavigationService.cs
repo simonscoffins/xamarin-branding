@@ -90,6 +90,7 @@ namespace Branding.Services {
 
             //    CurrentApplication.MainPage = new CustomNavigationPage(page);
 
+              
             } else if (CurrentApplication.MainPage is MainView) {
 
                 var mainPage = CurrentApplication.MainPage as MainView;
@@ -141,32 +142,6 @@ namespace Branding.Services {
 
             return page;
         }
-
-        //private void CreatePageViewModelMappings() {
-
-
-        //    //_mappings.Add(typeof(BookingCalendarViewModel), typeof(BookingCalendarView));
-        //    //_mappings.Add(typeof(BookingHotelViewModel), typeof(BookingHotelView));
-        //    //_mappings.Add(typeof(BookingHotelsViewModel), typeof(BookingHotelsView));
-        //    //_mappings.Add(typeof(BookingViewModel), typeof(BookingView));
-        //    //_mappings.Add(typeof(CheckoutViewModel), typeof(CheckoutView));
-        //    //_mappings.Add(typeof(LoginViewModel), typeof(LoginView));
-        //    //_mappings.Add(typeof(MainViewModel), typeof(MainView));
-        //    //_mappings.Add(typeof(MyRoomViewModel), typeof(MyRoomView));
-        //    //_mappings.Add(typeof(NotificationsViewModel), typeof(NotificationsView));
-        //    //_mappings.Add(typeof(OpenDoorViewModel), typeof(OpenDoorView));
-        //    //_mappings.Add(typeof(SettingsViewModel<RemoteSettings>), typeof(SettingsView));
-        //    //_mappings.Add(typeof(ExtendedSplashViewModel), typeof(ExtendedSplashView));
-
-        //    //if (Device.Idiom == TargetIdiom.Desktop) {
-        //    //    _mappings.Add(typeof(HomeViewModel), typeof(UwpHomeView));
-        //    //    _mappings.Add(typeof(SuggestionsViewModel), typeof(UwpSuggestionsView));
-        //    //} else {
-        //    //    _mappings.Add(typeof(HomeViewModel), typeof(HomeView));
-        //    //    _mappings.Add(typeof(SuggestionsViewModel), typeof(SuggestionsView));
-        //    //}
-        //}
-
 
     }
 }

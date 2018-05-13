@@ -21,7 +21,7 @@ namespace Branding.Views {
 
             base.OnAppearing();
 
-            StatusBarHelper.Instance.MakeTranslucentStatusBar(true);
+            //StatusBarHelper.Instance.MakeTranslucentStatusBar(true);
 
         }
 
